@@ -1,0 +1,4 @@
+dotnet new sln -o Produccion.App.Backend
+dotnet new classlib -o Produccion.App.Persistence
+dotnet new classlib -o Produccion.App.Domain
+dotnet new webapi -o Produccion.App.Service
