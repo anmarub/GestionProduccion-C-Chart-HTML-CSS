@@ -1,3 +1,4 @@
+dotnet new webapp -o Produccion.App.Frontend
 dotnet new sln -o Produccion.App.Backend
 dotnet new classlib -o Produccion.App.Persistence
 dotnet new classlib -o Produccion.App.Domain
