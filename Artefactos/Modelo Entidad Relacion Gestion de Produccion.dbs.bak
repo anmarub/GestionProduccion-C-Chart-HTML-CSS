@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="DiseñoRelacionaGestionProduccion" id="Project_24bc" database="LogicalDesign" >
+	<schema name="DiseñoRelacionaGestionProduccion" >
+		<table name="oc_details_fk_product" prior="purchanse_order_details" >
+			<column name="id" type="int" jt="4" mandatory="y" />
+			<column name="id_purchanse_order" prior="id_" type="int" jt="4" mandatory="y" />
+			<column name="id_product" type="int" jt="4" mandatory="y" />
+			<column name="qty" type="int" jt="4" mandatory="y" />
+			<index name="Pk_oc_details_id" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="oc_details_fk_product_Fk_purchanse_order" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_purchanse_order" type="Identifying" >
+				<fk_column name="id_purchanse_order" pk="id_oc" />
+			</fk>
+			<fk name="oc_details_fk_product_Fk_product" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_product" type="Identifying" >
+				<fk_column name="id_product" pk="id_product" />
+			</fk>
+		</table>
+		<table name="op_details_fk_product" prior="op_details_fk_" >
+			<column name="id" type="int" jt="4" mandatory="y" />
+			<column name="id_production_order" type="int" jt="4" mandatory="y" />
+			<column name="id_product" type="int" jt="4" mandatory="y" />
+			<column name="qty_production" type="int" jt="4" mandatory="y" />
+			<index name="Pk_op_details_fk_product_id" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="op_details_fk_product_Fk_production_order" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_production_order" type="Identifying" >
+				<fk_column name="id_production_order" pk="id_op" />
+			</fk>
+			<fk name="op_details_fk_product_Fk_product" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_product" type="Identifying" >
+				<fk_column name="id_product" pk="id_product" />
+			</fk>
+		</table>
+		<table name="tb_customer" prior="Entity" >
+			<column name="id_customer" type="int" jt="4" mandatory="y" />
+			<column name="name" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="identification" prior="identication" type="varchar" length="15" jt="12" mandatory="y" />
+			<column name="email" type="varchar" length="150" jt="12" mandatory="y" />
+			<column name="direcction" type="varchar" length="150" jt="12" mandatory="y" />
+			<column name="id_type_identification" prior="type_identification" type="int" jt="4" mandatory="y" />
+			<index name="Pk_tb_customer_id_customer" unique="PRIMARY_KEY" >
+				<column name="id_customer" />
+			</index>
+			<fk name="customer_fk_type_identification" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_type_document" type="Identifying" >
+				<fk_column name="id_type_identification" pk="id_document" />
+			</fk>
+		</table>
+		<table name="tb_inventory" prior="Entity" />
+		<table name="tb_product" prior="Entity" >
+			<column name="id_product" type="int" jt="4" mandatory="y" />
+			<column name="code_product" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="name" type="varchar" length="100" jt="12" mandatory="y" />
+			<column name="type_product" type="int" jt="4" mandatory="y" />
+			<column name="date_expiration" type="date" jt="91" />
+			<column name="date_manufacturing" type="date" jt="91" mandatory="y" />
+			<column name="qty_available" type="int" jt="4" mandatory="y" unsigned="y" >
+				<defo><![CDATA[0]]></defo>
+			</column>
+			<column name="qty_production" type="int" jt="4" mandatory="y" unsigned="y" >
+				<defo><![CDATA[0]]></defo>
+			</column>
+			<column name="qty_order" type="int" jt="4" mandatory="y" >
+				<defo><![CDATA[0]]></defo>
+			</column>
+			<column name="lote" type="varchar" length="50" jt="12" />
+			<index name="Pk_tb_product_id_product" unique="PRIMARY_KEY" >
+				<column name="id_product" />
+			</index>
+			<fk name="fk_tb_product_tb_type_product" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_type_product" type="Identifying" >
+				<fk_column name="type_product" pk="id_type_product" />
+			</fk>
+		</table>
+		<table name="tb_production_order" prior="tb_production order" >
+			<column name="id_op" type="int" jt="4" mandatory="y" />
+			<column name="code_order" type="varchar" length="50" jt="12" mandatory="y" />
+			<column name="date_delivery" type="date" jt="91" mandatory="y" />
+			<column name="delivery" type="varchar" length="150" jt="12" mandatory="y" />
+			<column name="id_status_op" type="int" length="1" jt="4" mandatory="y" />
+			<index name="Pk_tb_production_order_id_op" unique="PRIMARY_KEY" >
+				<column name="id_op" />
+			</index>
+			<fk name="fk_tb_production_order" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_status_production_order" type="Identifying" >
+				<fk_column name="id_status_op" pk="id_status_op" />
+			</fk>
+		</table>
+		<table name="tb_purchanse_order" prior="Entity" >
+			<column name="id_oc" type="int" jt="4" mandatory="y" />
+			<column name="id_customer" type="int" jt="4" mandatory="y" />
+			<column name="id_status_oc" prior="id_status_" type="int" length="150" jt="4" mandatory="y" />
+			<column name="date_delivery" type="date" jt="91" mandatory="y" />
+			<index name="Pk_tb_purchanse_order_id_oc" unique="PRIMARY_KEY" >
+				<column name="id_oc" />
+			</index>
+			<fk name="purchanse_order_Fk_id_status" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_status_purchanse_order" type="Identifying" >
+				<fk_column name="id_status_oc" pk="id_status_oc" />
+			</fk>
+			<fk name="tb_purchanse_order_Fk_customer" to_schema="DiseñoRelacionaGestionProduccion" to_table="tb_customer" type="Identifying" >
+				<fk_column name="id_customer" pk="id_customer" />
+			</fk>
+		</table>
+		<table name="tb_status_production_order" prior="status_production_order" >
+			<column name="id_status_op" prior="id_op" type="int" jt="4" mandatory="y" />
+			<column name="code_status_op" prior="code_status_oc" type="varchar" length="10" jt="12" mandatory="y" />
+			<column name="name" type="varchar" length="150" jt="12" mandatory="y" />
+			<index name="Pk_status_production_order_id_oc" unique="PRIMARY_KEY" >
+				<column name="id_status_op" />
+			</index>
+		</table>
+		<table name="tb_status_purchanse_order" prior="status_purchanse_order" >
+			<column name="id_status_oc" prior="id_status_op" type="int" length="1" jt="4" mandatory="y" />
+			<column name="code_status_oc" prior="code_status" type="varchar" length="1" jt="12" mandatory="y" />
+			<column name="name" type="varchar" length="100" jt="12" mandatory="y" />
+			<index name="Pk_status_purchanse_order_id_status_op" unique="PRIMARY_KEY" >
+				<column name="id_status_oc" />
+			</index>
+		</table>
+		<table name="tb_type_document" prior="Entity" >
+			<column name="id_document" type="int" jt="4" mandatory="y" />
+			<column name="code_document" type="varchar" length="15" jt="12" mandatory="y" />
+			<column name="name" type="varchar" length="150" jt="12" mandatory="y" />
+			<index name="Pk_tb_type_document_id_document" unique="PRIMARY_KEY" >
+				<column name="id_document" />
+			</index>
+		</table>
+		<table name="tb_type_product" prior="Entity" >
+			<column name="id_type_product" prior="id_product" type="int" jt="4" mandatory="y" />
+			<column name="code_product" prior="code" type="varchar" length="10" jt="12" mandatory="y" />
+			<column name="name" type="varchar" length="100" jt="12" mandatory="y" />
+			<index name="Pk_tb_type_product_id_product" unique="PRIMARY_KEY" >
+				<column name="id_type_product" />
+			</index>
+		</table>
+		<table name="tb_user" prior="tb_" spec="" >
+			<column name="id_user" type="int" jt="4" mandatory="y" />
+			<column name="usuario" type="varchar" length="256" jt="12" mandatory="y" />
+			<column name="nombre" type="varchar" length="150" jt="12" mandatory="y" />
+			<column name="apellido" type="varchar" length="150" jt="12" mandatory="y" />
+			<column name="rol" type="int" jt="4" mandatory="y" />
+			<index name="Pk_tb_user_id_user" unique="PRIMARY_KEY" >
+				<column name="id_user" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout_142d" show_relation="columns" >
+		<entity schema="DiseñoRelacionaGestionProduccion" name="oc_details_fk_product" color="C1D8EE" x="608" y="144" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="op_details_fk_product" color="C1D8EE" x="800" y="672" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_customer" color="C1D8EE" x="64" y="336" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_product" color="C1D8EE" x="624" y="384" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_production_order" color="C1D8EE" x="896" y="368" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_purchanse_order" color="C1D8EE" x="320" y="144" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_status_production_order" color="C1D8EE" x="992" y="128" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_status_purchanse_order" color="C1D8EE" x="320" y="432" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_type_document" color="C1D8EE" x="64" y="608" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_type_product" color="C1D8EE" x="304" y="688" />
+		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_user" color="C1D8EE" x="48" y="128" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[Modelo Entidad Relacion Proyecto Gestion de Produccion]]></comment>
+		</callout>
+	</layout>
+</project>
