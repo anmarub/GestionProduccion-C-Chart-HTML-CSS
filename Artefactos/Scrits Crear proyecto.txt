@@ -1,5 +1,12 @@
+// Scrip para crear plantilla Frontend
 dotnet new webapp -o Produccion.App.Frontend
+
+// Scrip para crear plantilla Backend
+dotnet new classlib -o Produccion.App.Domain
+- crear carpeta entidades :)
+    * crear archivo con las entidades con extencion .cs
+
 dotnet new sln -o Produccion.App.Backend
 dotnet new classlib -o Produccion.App.Persistence
-dotnet new classlib -o Produccion.App.Domain
+
 dotnet new webapi -o Produccion.App.Service
