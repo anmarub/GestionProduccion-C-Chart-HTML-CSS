@@ -82,8 +82,8 @@ using Produccion.App.Frontend.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
-    public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/orderproduccion")]
+    public partial class OrderProduction : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,7 +91,7 @@ using Produccion.App.Frontend.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\FetchData.razor"
+#line 37 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\OrderProduction.razor"
        
     private WeatherForecast[] forecasts;
 

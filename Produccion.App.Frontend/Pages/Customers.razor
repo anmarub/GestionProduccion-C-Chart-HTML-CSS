@@ -1,0 +1,85 @@
+@page "/customers"
+@inject HttpClient Http
+
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+        <h5 class="card-title">Productos</h5>
+        <form>
+            <div class="form-row">
+                <div>
+                    <button class="btn btn-primary">Nuevo</button>
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" id="useIndividualParams" maxlength="@maxlength" placeholder="@placeholder" required="@required" size="@size" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temp. (C)</th>
+                        <th>Temp. (F)</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in forecasts)
+                    {
+                        <tr>
+                            <td>@forecast.Date.ToShortDateString()</td>
+                            <td>@forecast.TemperatureC</td>
+                            <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</div>
+}
+
+@code {
+    private WeatherForecast[] forecasts;
+    private String maxlength = "10";
+    private string placeholder = "Buscar Productos";
+    private string required = "required";
+    private string size = "20";
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+
+        private Dictionary<string, object> InputAttributes { get; set; } =
+        new()
+        {
+            { "maxlength", "10" },
+            { "placeholder", "Input placeholder text" },
+            { "required", "required" },
+            { "size", "20" }
+        };
+}

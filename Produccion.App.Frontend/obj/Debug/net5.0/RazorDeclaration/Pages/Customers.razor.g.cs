@@ -82,8 +82,8 @@ using Produccion.App.Frontend.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/customers")]
+    public partial class Customers : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,18 +91,43 @@ using Produccion.App.Frontend.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\Counter.razor"
+#line 54 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\Customers.razor"
        
-    private int currentCount = 0;
+    private WeatherForecast[] forecasts;
+    private String maxlength = "10";
+    private string placeholder = "Buscar Productos";
+    private string required = "required";
+    private string size = "20";
 
-    private void IncrementCount()
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
     }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+
+        private Dictionary<string, object> InputAttributes { get; set; } =
+        new()
+        {
+            { "maxlength", "10" },
+            { "placeholder", "Input placeholder text" },
+            { "required", "required" },
+            { "size", "20" }
+        };
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

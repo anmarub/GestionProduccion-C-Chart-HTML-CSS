@@ -90,7 +90,7 @@ using Produccion.App.Frontend.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Shared\NavMenu.razor"
+#line 38 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

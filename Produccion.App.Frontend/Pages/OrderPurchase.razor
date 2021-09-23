@@ -1,9 +1,9 @@
-@page "/orderproduccion"
+@page "/orderpurchase"
 @inject HttpClient Http
 
-<h1>Weather forecast</h1>
+<h1>Ordenes de Compra</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p>Current count</p>
 
 @if (forecasts == null)
 {
@@ -53,3 +53,4 @@ else
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
+

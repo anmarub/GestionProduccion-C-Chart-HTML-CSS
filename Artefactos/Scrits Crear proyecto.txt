@@ -10,3 +10,15 @@ dotnet new sln -o Produccion.App.Backend
 dotnet new classlib -o Produccion.App.Persistence
 
 dotnet new webapi -o Produccion.App.Service
+
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
