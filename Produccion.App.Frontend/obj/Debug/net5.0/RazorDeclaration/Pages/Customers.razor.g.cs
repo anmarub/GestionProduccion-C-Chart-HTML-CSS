@@ -95,7 +95,7 @@ using Produccion.App.Frontend.Shared;
        
     private WeatherForecast[] forecasts;
     private String maxlength = "10";
-    private string placeholder = "Buscar Productos";
+    private string placeholder = "Buscar Cliente";
     private string required = "required";
     private string size = "20";
 
@@ -119,7 +119,7 @@ using Produccion.App.Frontend.Shared;
         new()
         {
             { "maxlength", "10" },
-            { "placeholder", "Input placeholder text" },
+            { "placeholder", "Buscar Cliente" },
             { "required", "required" },
             { "size", "20" }
         };

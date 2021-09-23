@@ -91,9 +91,13 @@ using Produccion.App.Frontend.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\Products.razor"
+#line 54 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\Products.razor"
        
     private WeatherForecast[] forecasts;
+    private String maxlength = "10";
+    private string placeholder = "Buscar Productos";
+    private string required = "required";
+    private string size = "20";
 
     protected override async Task OnInitializedAsync()
     {
@@ -110,6 +114,15 @@ using Produccion.App.Frontend.Shared;
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
+
+    private Dictionary<string, object> InputAttributes { get; set; } =
+        new()
+        {
+            { "maxlength", "10" },
+            { "placeholder", "Input placeholder text" },
+            { "required", "required" },
+            { "size", "20" }
+        };
 
 #line default
 #line hidden

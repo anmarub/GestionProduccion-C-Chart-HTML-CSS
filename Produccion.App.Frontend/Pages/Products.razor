@@ -1,9 +1,22 @@
 ﻿@page "/products"
 @inject HttpClient Http
 
-<h1>Products</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+        <h5 class="card-title">Ordenes de Compra</h5>
+        <form>
+            <div class="form-row">
+                <div>
+                    <button class="btn btn-primary">Nuevo</button>
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" id="useIndividualParams" maxlength="@maxlength" placeholder="@placeholder" required="@required" size="@size" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
 @if (forecasts == null)
 {
@@ -11,31 +24,39 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temp. (C)</th>
+                        <th>Temp. (F)</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var forecast in forecasts)
+                    {
+                        <tr>
+                            <td>@forecast.Date.ToShortDateString()</td>
+                            <td>@forecast.TemperatureC</td>
+                            <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</div>
 }
 
 @code {
     private WeatherForecast[] forecasts;
+    private String maxlength = "10";
+    private string placeholder = "Buscar Productos";
+    private string required = "required";
+    private string size = "20";
 
     protected override async Task OnInitializedAsync()
     {
@@ -52,4 +73,13 @@ else
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
+
+    private Dictionary<string, object> InputAttributes { get; set; } =
+        new()
+        {
+            { "maxlength", "10" },
+            { "placeholder", "Input placeholder text" },
+            { "required", "required" },
+            { "size", "20" }
+        };
 }
