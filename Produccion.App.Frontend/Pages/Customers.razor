@@ -29,11 +29,12 @@ else
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Temp. (C)</th>
-                        <th>Temp. (F)</th>
-                        <th>Summary</th>
-                        <th>Options</th>
+                        <th>Tipo Documento</th>
+                        <th>Identificacion</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Direccion</th>
+                        <th>Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,7 @@ else
                             <td>@forecast.Date.ToShortDateString()</td>
                             <td>@forecast.TemperatureC</td>
                             <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
                             <td>@forecast.Summary</td>
                             <td>
                                 <a class="btn btn-warning btn-sm"><span type="button" aria-label="Left Align" class="oi oi-pencil iconLines" aria-hidden="true"></span></a> 

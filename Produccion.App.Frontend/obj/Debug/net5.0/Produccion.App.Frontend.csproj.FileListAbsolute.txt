@@ -641,3 +641,9 @@ C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\Products.razor.rz.scp.css
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\CustomerForm.razor.g.cs
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\CustomerForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\OrderPurchaseForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\ProductsForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\OrderProductionForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\OrderProductionForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\OrderPurchaseForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\ProductsForm.razor.g.cs

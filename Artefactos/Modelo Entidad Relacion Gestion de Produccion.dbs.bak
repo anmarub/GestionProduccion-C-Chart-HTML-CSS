@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="DiseñoRelacionaGestionProduccion" id="Project_24bc" database="LogicalDesign" >
 	<schema name="DiseñoRelacionaGestionProduccion" >
+		<table name="Entity" />
 		<table name="oc_details_fk_product" prior="purchanse_order_details" >
 			<column name="id" type="int" jt="4" mandatory="y" />
 			<column name="id_purchanse_order" prior="id_" type="int" jt="4" mandatory="y" />
@@ -142,6 +143,7 @@
 		</table>
 	</schema>
 	<layout name="Default Layout" id="Layout_142d" show_relation="columns" >
+		<comment><![CDATA[DiseñoRelacionaGestionProduccion]]></comment>
 		<entity schema="DiseñoRelacionaGestionProduccion" name="oc_details_fk_product" color="C1D8EE" x="608" y="144" />
 		<entity schema="DiseñoRelacionaGestionProduccion" name="op_details_fk_product" color="C1D8EE" x="800" y="672" />
 		<entity schema="DiseñoRelacionaGestionProduccion" name="tb_customer" color="C1D8EE" x="64" y="336" />

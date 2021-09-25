@@ -7,7 +7,7 @@
         <form>
             <div class="form-row">
                 <div>
-                    <button class="btn btn-primary">Nuevo</button>
+                    <a class="btn btn-primary" href='/addProduct'>Nuevo </a>
                     <button class="btn btn-primary">Buscar</button>
                 </div>
                 <div class="col-md-4">
@@ -29,10 +29,11 @@ else
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Temp. (C)</th>
-                        <th>Temp. (F)</th>
-                        <th>Summary</th>
+                        <th>Codigo</th>
+                        <th>Nombre Producto</th>
+                        <th>Tipo Producto</th>
+                        <th>Cant. Disponible</th>
+                        <th>Cant. Produccion</th>
                         <th>Options</th>
                     </tr>
                 </thead>
@@ -43,6 +44,7 @@ else
                             <td>@forecast.Date.ToShortDateString()</td>
                             <td>@forecast.TemperatureC</td>
                             <td>@forecast.TemperatureF</td>
+                            <td>@forecast.Summary</td>
                             <td>@forecast.Summary</td>
                             <td>
                                 <a class="btn btn-warning btn-sm"><span type="button" aria-label="Left Align" class="oi oi-pencil iconLines" aria-hidden="true"></span></a> 
