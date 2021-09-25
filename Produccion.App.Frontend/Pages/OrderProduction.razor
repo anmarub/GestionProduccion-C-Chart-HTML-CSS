@@ -33,6 +33,7 @@ else
                         <th>Temp. (C)</th>
                         <th>Temp. (F)</th>
                         <th>Summary</th>
+                        <th>Options</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,10 @@ else
                             <td>@forecast.TemperatureC</td>
                             <td>@forecast.TemperatureF</td>
                             <td>@forecast.Summary</td>
+                            <td>
+                                <a class="btn btn-warning btn-sm"><span type="button" aria-label="Left Align" class="oi oi-pencil iconLines" aria-hidden="true"></span></a> 
+                     󠀠󠀠󠀠󠀠           <a class="btn btn-danger btn-sm"><span type="button" aria-label="Left Align" class="oi oi-circle-x iconLines" aria-hidden="true"></span></a> 
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -53,10 +58,6 @@ else
 
 @code {
     private WeatherForecast[] forecasts;
-    private String maxlength = "10";
-    private string placeholder = "Buscar Productos";
-    private string required = "required";
-    private string size = "20";
 
     protected override async Task OnInitializedAsync()
     {
@@ -73,7 +74,11 @@ else
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
-
+    
+    private String maxlength = "10";
+    private string placeholder = "Buscar Orden de Produccion";
+    private string required = "required";
+    private string size = "20";
     private Dictionary<string, object> InputAttributes { get; set; } =
         new()
         {

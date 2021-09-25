@@ -33,6 +33,7 @@ else
                         <th>Temp. (C)</th>
                         <th>Temp. (F)</th>
                         <th>Summary</th>
+                        <th>Options</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,10 @@ else
                             <td>@forecast.TemperatureC</td>
                             <td>@forecast.TemperatureF</td>
                             <td>@forecast.Summary</td>
+                            <td>
+                                <a class="btn btn-warning btn-sm"><span type="button" aria-label="Left Align" class="oi oi-pencil iconLines" aria-hidden="true"></span></a> 
+                     󠀠󠀠󠀠󠀠           <a class="btn btn-danger btn-sm"><span type="button" aria-label="Left Align" class="oi oi-circle-x iconLines" aria-hidden="true"></span></a> 
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -54,7 +59,7 @@ else
 @code {
     private WeatherForecast[] forecasts;
     private String maxlength = "10";
-    private string placeholder = "Buscar Productos";
+    private string placeholder = "Buscar Orden de Compra";
     private string required = "required";
     private string size = "20";
 
@@ -78,7 +83,7 @@ else
         new()
         {
             { "maxlength", "10" },
-            { "placeholder", "Input placeholder text" },
+            { "placeholder", "Buscar Orden de Compra" },
             { "required", "required" },
             { "size", "20" }
         };

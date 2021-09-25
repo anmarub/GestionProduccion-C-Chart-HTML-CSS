@@ -256,35 +256,101 @@
         }
       },
       {
-        "HashCode": -1682480223,
+        "HashCode": 191652498,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Customers",
+        "Name": "Produccion.App.Frontend.Pages.OrderProduction_razorForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Customers"
+            "TagName": "OrderProduction_razorForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Customers"
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction_razorForm"
         }
       },
       {
-        "HashCode": -626508040,
+        "HashCode": 790886421,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Customers",
+        "Name": "Produccion.App.Frontend.Pages.OrderProduction_razorForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion.App.Frontend.Pages.Customers"
+            "TagName": "Produccion.App.Frontend.Pages.OrderProduction_razorForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Customers",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction_razorForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 954343691,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderPurchase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase"
+        }
+      },
+      {
+        "HashCode": 1961309300,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderPurchase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 207878007,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderPurchaseForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
+        }
+      },
+      {
+        "HashCode": -341792970,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -322,35 +388,101 @@
         }
       },
       {
-        "HashCode": 954343691,
+        "HashCode": 608486412,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "Name": "Produccion.App.Frontend.Pages.ProductsForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OrderPurchase"
+            "TagName": "ProductsForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase"
+          "Common.TypeName": "Produccion.App.Frontend.Pages.ProductsForm"
         }
       },
       {
-        "HashCode": 1961309300,
+        "HashCode": 56151257,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "Name": "Produccion.App.Frontend.Pages.ProductsForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion.App.Frontend.Pages.OrderPurchase"
+            "TagName": "Produccion.App.Frontend.Pages.ProductsForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.ProductsForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1682480223,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.Customers",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Customers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Customers"
+        }
+      },
+      {
+        "HashCode": -626508040,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.Customers",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.Customers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Customers",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1959219350,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CustomerForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm"
+        }
+      },
+      {
+        "HashCode": -1564335212,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.CustomerForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13075,6 +13207,11 @@
   "RootNamespace": "Produccion.App.Frontend",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\OrderPurchaseForm.razor",
+      "TargetPath": "Pages\\OrderPurchaseForm.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\OrderProduction.razor",
       "TargetPath": "Pages\\OrderProduction.razor",
       "FileKind": "component"
@@ -13085,8 +13222,18 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\CustomerForm.razor",
+      "TargetPath": "Pages\\CustomerForm.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\OrderProduction.razorForm.razor",
+      "TargetPath": "Pages\\OrderProduction.razorForm.razor",
       "FileKind": "component"
     },
     {
@@ -13097,6 +13244,11 @@
     {
       "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\Customers.razor",
       "TargetPath": "Pages\\Customers.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App.Frontend\\Pages\\ProductsForm.razor",
+      "TargetPath": "Pages\\ProductsForm.razor",
       "FileKind": "component"
     },
     {

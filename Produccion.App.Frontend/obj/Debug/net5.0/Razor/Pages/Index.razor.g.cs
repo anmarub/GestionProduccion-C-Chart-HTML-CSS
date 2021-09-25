@@ -85,7 +85,7 @@ using Produccion.App.Frontend.Shared;
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
-            __builder.AddMarkupContent(0, "<h1>Dashboard</h1>\r\n\r\nIndicadores de seguimiento\r\n\r\n");
+            __builder.AddMarkupContent(0, "<h1 b-pwluvpqlxd>Dashboard</h1>\r\n\r\nIndicadores de seguimiento\r\n\r\n");
             __builder.OpenComponent<Produccion.App.Frontend.Shared.SurveyPrompt>(1);
             __builder.AddAttribute(2, "Title", "TODO");
             __builder.CloseComponent();

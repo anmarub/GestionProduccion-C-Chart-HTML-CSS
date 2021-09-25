@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Produccion.App.Frontend.Shared
+namespace Produccion.App.Frontend.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,7 @@ using Produccion.App.Frontend.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    public partial class OrderProductionForm : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

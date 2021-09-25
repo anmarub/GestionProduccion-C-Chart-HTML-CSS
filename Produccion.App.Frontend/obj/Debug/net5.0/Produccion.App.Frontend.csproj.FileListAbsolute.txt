@@ -634,3 +634,10 @@ C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\OrderPurchase.razor.g.cs
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\Customers.razor.g.cs
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\Customers.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\OrderProduction.razor.rz.scp.css
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\Customers.razor.rz.scp.css
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\Index.razor.rz.scp.css
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\OrderPurchase.razor.rz.scp.css
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\scopedcss\Pages\Products.razor.rz.scp.css
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\RazorDeclaration\Pages\CustomerForm.razor.g.cs
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\obj\Debug\net5.0\Razor\Pages\CustomerForm.razor.g.cs
