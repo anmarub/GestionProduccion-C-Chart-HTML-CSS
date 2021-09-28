@@ -90,43 +90,6 @@ using Produccion.App.Frontend.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 61 "C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App.Frontend\Pages\Customers.razor"
-       
-    private WeatherForecast[] forecasts;
-    private String maxlength = "10";
-    private string placeholder = "Buscar Cliente";
-    private string required = "required";
-    private string size = "20";
-
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-    }
-
-    public class WeatherForecast
-    {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public string Summary { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
-
-        private Dictionary<string, object> InputAttributes { get; set; } =
-        new()
-        {
-            { "maxlength", "10" },
-            { "placeholder", "Buscar Cliente" },
-            { "required", "required" },
-            { "size", "20" }
-        };
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

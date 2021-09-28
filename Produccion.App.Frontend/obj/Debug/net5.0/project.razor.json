@@ -8,134 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1156141620,
+        "HashCode": -1873389790,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderProductionForm",
+        "Name": "Produccion.App.Frontend.App",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OrderProductionForm"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProductionForm"
+          "Common.TypeName": "Produccion.App.Frontend.App"
         }
       },
       {
-        "HashCode": 2125728207,
+        "HashCode": -1717230250,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderProductionForm",
+        "Name": "Produccion.App.Frontend.App",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion.App.Frontend.Pages.OrderProductionForm"
+            "TagName": "Produccion.App.Frontend.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProductionForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 207878007,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OrderPurchaseForm"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
-        }
-      },
-      {
-        "HashCode": -341792970,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 954343691,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OrderPurchase"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase"
-        }
-      },
-      {
-        "HashCode": 1961309300,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.Pages.OrderPurchase"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -260510437,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderProduction",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OrderProduction"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction"
-        }
-      },
-      {
-        "HashCode": -827332725,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.OrderProduction",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.Pages.OrderProduction"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction",
+          "Common.TypeName": "Produccion.App.Frontend.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -173,68 +74,35 @@
         }
       },
       {
-        "HashCode": -1577554238,
+        "HashCode": -386828423,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Products",
+        "Name": "Produccion.App.Frontend.Pages.Index",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Products"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Products"
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Index"
         }
       },
       {
-        "HashCode": 787544292,
+        "HashCode": -2142489463,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Products",
+        "Name": "Produccion.App.Frontend.Pages.Index",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion.App.Frontend.Pages.Products"
+            "TagName": "Produccion.App.Frontend.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Products",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1959219350,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CustomerForm"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm"
-        }
-      },
-      {
-        "HashCode": -1564335212,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.Pages.CustomerForm"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -272,35 +140,253 @@
         }
       },
       {
-        "HashCode": -386828423,
+        "HashCode": -1959219350,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Index",
+        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "CustomerForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Index"
+          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm"
         }
       },
       {
-        "HashCode": -2142489463,
+        "HashCode": -1564335212,
         "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Pages.Index",
+        "Name": "Produccion.App.Frontend.Pages.CustomerForm",
         "AssemblyName": "Produccion.App.Frontend",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Produccion.App.Frontend.Pages.Index"
+            "TagName": "Produccion.App.Frontend.Pages.CustomerForm"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Pages.Index",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.CustomerForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -260510437,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderProduction",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderProduction"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction"
+        }
+      },
+      {
+        "HashCode": -827332725,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderProduction",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderProduction"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProduction",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1156141620,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderProductionForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderProductionForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProductionForm"
+        }
+      },
+      {
+        "HashCode": 2125728207,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderProductionForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderProductionForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderProductionForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 954343691,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderPurchase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase"
+        }
+      },
+      {
+        "HashCode": 1961309300,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchase",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderPurchase"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchase",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 207878007,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderPurchaseForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
+        }
+      },
+      {
+        "HashCode": -341792970,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.OrderPurchaseForm"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.OrderPurchaseForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1577554238,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.Products",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Products"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Products"
+        }
+      },
+      {
+        "HashCode": 787544292,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Pages.Products",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Pages.Products"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Pages.Products",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1866528675,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Shared.SurveyPrompt",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 1674095348,
+        "Kind": "Components.Component",
+        "Name": "Produccion.App.Frontend.Shared.SurveyPrompt",
+        "AssemblyName": "Produccion.App.Frontend",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Produccion.App.Frontend.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Produccion.App.Frontend.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -430,92 +516,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Produccion.App.Frontend.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1866528675,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Shared.SurveyPrompt",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 1674095348,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.Shared.SurveyPrompt",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1873389790,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.App",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.App"
-        }
-      },
-      {
-        "HashCode": -1717230250,
-        "Kind": "Components.Component",
-        "Name": "Produccion.App.Frontend.App",
-        "AssemblyName": "Produccion.App.Frontend",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Produccion.App.Frontend.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Produccion.App.Frontend.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
