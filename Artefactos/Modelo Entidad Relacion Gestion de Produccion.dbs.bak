@@ -86,6 +86,7 @@
 		</table>
 		<table name="tb_purchanse_order" prior="Entity" >
 			<column name="id_oc" type="int" jt="4" mandatory="y" />
+			<column name="num_oc" type="text" jt="-1" mandatory="y" />
 			<column name="id_customer" type="int" jt="4" mandatory="y" />
 			<column name="id_status_oc" prior="id_status_" type="int" length="150" jt="4" mandatory="y" />
 			<column name="date_delivery" type="date" jt="91" mandatory="y" />
