@@ -13,5 +13,10 @@ Frontend
 
 Data Complementaria
 
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.4
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.4
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.4
+dotnet add package Microsoft.EntityFrameworkCore.sqlServer --version 5.0.4
+
 
 
