@@ -13,10 +13,16 @@ Frontend
 
 Data Complementaria
 
+Comandos En la capa de Persistencia 
+
 dotnet add package Microsoft.EntityFrameworkCore --version 5.0.4
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.4
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.4
 dotnet add package Microsoft.EntityFrameworkCore.sqlServer --version 5.0.4
+
+Comandos de relacionamiento de proyectos
+
+dotnet add reference ..\Produccion.App.Domain
 
 
 

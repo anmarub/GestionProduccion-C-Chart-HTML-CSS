@@ -13,3 +13,6 @@ C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\obj\Debug\net5.0\ref\Produccion.App.Persistence.dll
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\obj\Debug\net5.0\Produccion.App.Persistence.pdb
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\obj\Debug\net5.0\Produccion.App.Persistence.genruntimeconfig.cache
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\bin\Debug\net5.0\Produccion.App.Domain.dll
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\bin\Debug\net5.0\Produccion.App.Domain.pdb
+C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Persistence\obj\Debug\net5.0\Produccion.App.Persistence.csproj.CopyComplete

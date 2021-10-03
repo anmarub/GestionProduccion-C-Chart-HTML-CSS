@@ -1,13 +1,12 @@
 using System;
-using System.Collections.Generic;
 
 namespace Produccion.App.Domain.Entities
 {
     public class TypeDocument
     {
-        int id_document { get; set; }
-        string code {get; set; }
-        string name {get; set; }
+        public int id_document { get; set; }
+        public string code {get; set; }
+        public string name {get; set; }
         
     }
 }
