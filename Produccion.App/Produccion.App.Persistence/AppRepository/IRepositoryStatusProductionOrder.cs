@@ -7,6 +7,11 @@ namespace Produccion.App.Persistence.AppRepository
 {
     public interface IRepositoryStatusProductionOrder
     {
-         
+         StatusProductionOrder AddStatusProductionOrder(StatusProductionOrder StatusProductionOrder);
+         IEnumerable<StatusProductionOrder> GetStatusProductionGetAllStatusProduction();
+         StatusProductionOrder GetStatusProduction(int idStatusProduction);
+         StatusProductionOrder UpdateStatusProduction(StatusProductionOrder StatusProduction);
+         void DeleteStatusProduction(int idStatusProduction);
+
     }
 }

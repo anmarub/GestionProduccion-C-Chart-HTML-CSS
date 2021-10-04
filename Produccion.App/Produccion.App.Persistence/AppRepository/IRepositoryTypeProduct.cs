@@ -7,6 +7,10 @@ namespace Produccion.App.Persistence.AppRepository
 {
     public interface IRepositoryTypeProduct
     {
-         
+         TypeProduct AddTypeProduct(TypeProduct typeProduct);
+         IEnumerable<TypeProduct> GetAllTypeProduct();
+         TypeProduct GetTypeProduct(int idType);
+         TypeProduct UpdateTypeProduct(TypeProduct typeProduct);
+         void DeleteTypeProduct(int idType);
     }
 }
