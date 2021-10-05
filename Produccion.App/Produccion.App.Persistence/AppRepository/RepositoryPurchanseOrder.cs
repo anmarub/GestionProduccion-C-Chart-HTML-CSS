@@ -14,5 +14,28 @@ namespace Produccion.App.Persistence.AppRepository
         {
             _appContext = appContext;
         }
+
+        PurchanseOrder IRepositoryPurchanseOrder.AddPurchanseOrder(PurchanseOrder OrdeOc)
+        {
+
+        }
+        IEnumerable<PurchanseOrder> IRepositoryPurchanseOrder.GetAllPurchanseOrder()
+        {
+
+        }
+        PurchanseOrder IRepositoryPurchanseOrder.GetPurchanseOrder(int IdOrderOc)
+        {
+
+        }
+
+        PurchanseOrder IRepositoryPurchanseOrder.UpdatePurchanseOrder(PurchanseOrder OrdeOc)
+        {
+
+        }
+
+        void IRepositoryPurchanseOrder.DeletePurchanseOrder(int IdOrderOc)
+        {
+            
+        }
     }
 }

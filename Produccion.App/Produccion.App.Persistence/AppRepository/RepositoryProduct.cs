@@ -14,6 +14,31 @@ namespace Produccion.App.Persistence.AppRepository
         {
             _appContext = appContext;
         }
-        
+
+        Product IRepositoryProduct.AddProduct(Product product)
+        {
+
+        }
+
+        IEnumerable<Product> IRepositoryProduct.GetAllProduct()
+        {
+
+        }
+
+        Product IRepositoryProduct.GetProduct(int IdProduct)
+        {
+
+        }
+
+        Product IRepositoryProduct.UpdateProduct(int IdProduct)
+        {
+
+        }
+
+        void IRepositoryProduct.DeleteProduct(int IdProduct)
+        {
+            
+        }
+
     }
 }

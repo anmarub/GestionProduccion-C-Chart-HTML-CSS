@@ -14,5 +14,29 @@ namespace Produccion.App.Persistence.AppRepository
         {
             _appContext = appContext;
         }
+
+        StatusPurchanseOrder IRepositoryStatusPurchanseOrder.AddStatusPurchanseOrder(StatusPurchanseOrder StatusOP)
+        {
+
+        }
+        IEnumerable<StatusPurchanseOrder> IRepositoryStatusPurchanseOrder.GetAllStatusPurchseOrder()
+        {
+
+        }
+
+        StatusPurchanseOrder IRepositoryStatusPurchanseOrder.GetStatusPurchseOrder(int idStatusOP)
+        {
+
+        }
+
+        StatusPurchanseOrder IRepositoryStatusPurchanseOrder.UpdateStatusPurchseOrder(StatusPurchanseOrder StatusOP)
+        {
+
+        }
+
+        void IRepositoryStatusPurchanseOrder.DeleteStatusPurchseOrder(int idStatusOP)
+        {
+            
+        }
     }
 }

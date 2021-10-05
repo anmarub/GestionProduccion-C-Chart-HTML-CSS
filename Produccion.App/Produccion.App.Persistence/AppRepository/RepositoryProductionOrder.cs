@@ -15,5 +15,30 @@ namespace Produccion.App.Persistence.AppRepository
         {
             _appContext = appContext;
         }
+
+        ProductionOrder IRepositoryProductionOrder.AddProduction(ProductionOrder ProductionOrders)
+        {
+
+        }
+
+        IEnumerable<ProductionOrder> IRepositoryProductionOrder.GetAllProductionOrder()
+        {
+
+        }
+
+        ProductionOrder IRepositoryProductionOrder.GetProductionOrder(int idOrder)
+        {
+
+        }
+
+        ProductionOrder IRepositoryProductionOrder.UpdateProductionOrder(ProductionOrder ProductionOrders)
+        {
+
+        }
+
+        void IRepositoryProductionOrder.DeleteProductionOrder()
+        {
+            
+        }
     }
 }

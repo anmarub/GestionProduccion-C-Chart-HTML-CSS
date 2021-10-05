@@ -15,7 +15,7 @@ namespace Produccion.App.Persistence.AppRepository
             _appContext = appContext;
         }
 
-        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.AddDetailsOP(Product products)
+        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.AddDetailsOP(OpDetailsFkProduct OpDetails)
         {
 
         }
@@ -25,17 +25,17 @@ namespace Produccion.App.Persistence.AppRepository
 
         }
 
-        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.GetDetailsOP(int idProduct)
+        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.GetDetailsOP(int idOpDetails)
         {
 
         }
 
-        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.UpdateDetailsOP(Product product)
+        OpDetailsFkProduct IRepositoryOpDetailsFkProduct.UpdateDetailsOP(OpDetailsFkProduct OpDetails)
         {
 
         }
 
-        void IRepositoryOpDetailsFkProduct.DeleteDetailsOP(int idProduct)
+        void IRepositoryOpDetailsFkProduct.DeleteDetailsOP(int idOpDetails)
         {
 
         }

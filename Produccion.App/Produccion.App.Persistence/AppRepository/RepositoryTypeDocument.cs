@@ -13,6 +13,31 @@ namespace Produccion.App.Persistence.AppRepository
         public RepositoryTypeDocument(AppContext appContext)
         {
             _appContext = appContext;
-        }   
+        }
+        
+        TypeDocument IRepositoryTypeDocument.AddTypeDocument(TypeDocument TypeDocument)
+        {
+            
+        }
+
+        IEnumerable<TypeDocument> IRepositoryTypeDocument.GetAllTypeDocuments()   
+        {
+
+        }
+
+        TypeDocument IRepositoryTypeDocument.GetTypeDocument(int idTypeDocument)
+        {
+
+        }
+
+        TypeDocument IRepositoryTypeDocument.UpdateTypeDocumet(TypeDocument TypeDocument)
+        {
+
+        }
+
+        void IRepositoryTypeDocument.DeleteTypeDocument(int idTypeDocument)
+        {
+            
+        }
     }
 }

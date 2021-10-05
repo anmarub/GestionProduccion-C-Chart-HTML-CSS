@@ -14,5 +14,31 @@ namespace Produccion.App.Persistence.AppRepository
         {
             _appContext = appContext;
         }
+
+        TypeProduct IRepositoryTypeDocument.AddTypeProduct(TypeProduct typeProduct)
+        {
+
+        }
+
+        IEnumerable<TypeProduct> IRepositoryTypeProduct.GetAllTypeProduct()
+        {
+
+        }
+
+        TypeProduct IRepositoryTypeDocumento.GetTypeProduct(int idTypeDocument)
+        {
+
+        }
+        
+        TypeProduct IRepositoryTypeDocument.UpdateTypeProduct(TypeProduct typeProduct)
+        {
+
+        }
+
+        void IRepositoryTypeDocument.DeleteTypeProduct()
+        {
+            
+        }
+
     }
 }
