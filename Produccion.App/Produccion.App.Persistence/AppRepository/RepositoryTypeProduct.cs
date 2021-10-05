@@ -5,8 +5,14 @@ using Produccion.App.Persistence.AppRepository;
 
 namespace Produccion.App.Persistence.AppRepository
 {
-    public class RepositoryTypeProduct
+    public class RepositoryTypeProduct : IRepositoryTypeProduct
     {
-        
+        //Defino atributo
+        private readonly AppContext _appContext;
+        //Defino Constructor y agrego el atributo para marcarlo como obligatorio
+        public RepositoryTypeProduct(AppContext appContext)
+        {
+            _appContext = appContext;
+        }
     }
 }

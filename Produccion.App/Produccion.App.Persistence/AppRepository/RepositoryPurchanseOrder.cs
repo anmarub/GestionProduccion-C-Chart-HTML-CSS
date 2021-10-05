@@ -5,8 +5,14 @@ using Produccion.App.Persistence.AppRepository;
 
 namespace Produccion.App.Persistence.AppRepository
 {
-    public class RepositoryPurchanseOrder
+    public class RepositoryPurchanseOrder : IRepositoryPurchanseOrder
     {
-        
+        //Defino atributo
+        private readonly AppContext _appContext;
+        //Defino Constructor y agrego el atributo para marcarlo como obligatorio
+        public RepositoryPurchanseOrder(AppContext appContext)
+        {
+            _appContext = appContext;
+        }
     }
 }
