@@ -17,22 +17,22 @@ namespace Produccion.App.Persistence.AppRepository
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.AddDetailsOP(OpDetailsFkProduct OpDetails)
         {
-
+            return null;
         }
 
         IEnumerable<OpDetailsFkProduct> IRepositoryOpDetailsFkProduct.GetAllDetailsOP()
         {
-
+            return null;
         }
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.GetDetailsOP(int idOpDetails)
         {
-
+            return null;
         }
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.UpdateDetailsOP(OpDetailsFkProduct OpDetails)
         {
-
+            return null;
         }
 
         void IRepositoryOpDetailsFkProduct.DeleteDetailsOP(int idOpDetails)

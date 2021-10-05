@@ -17,22 +17,22 @@ namespace Produccion.App.Persistence.AppRepository
 
         Product IRepositoryProduct.AddProduct(Product product)
         {
-
+            return null;
         }
 
         IEnumerable<Product> IRepositoryProduct.GetAllProduct()
         {
-
+            return null;
         }
 
         Product IRepositoryProduct.GetProduct(int IdProduct)
         {
-
+            return null;
         }
 
-        Product IRepositoryProduct.UpdateProduct(int IdProduct)
+        Product IRepositoryProduct.UpdateProduct(Product product)
         {
-
+            return null;
         }
 
         void IRepositoryProduct.DeleteProduct(int IdProduct)

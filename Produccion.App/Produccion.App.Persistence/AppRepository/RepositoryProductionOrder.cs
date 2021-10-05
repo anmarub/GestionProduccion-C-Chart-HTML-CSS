@@ -16,27 +16,27 @@ namespace Produccion.App.Persistence.AppRepository
             _appContext = appContext;
         }
 
-        ProductionOrder IRepositoryProductionOrder.AddProduction(ProductionOrder ProductionOrders)
+        ProductionOrder IRepositoryProductionOrder.AddProductionOrder(ProductionOrder ProductionOrders)
         {
-
+            return null;
         }
 
         IEnumerable<ProductionOrder> IRepositoryProductionOrder.GetAllProductionOrder()
         {
-
+            return null;
         }
 
         ProductionOrder IRepositoryProductionOrder.GetProductionOrder(int idOrder)
         {
-
+            return null;
         }
 
         ProductionOrder IRepositoryProductionOrder.UpdateProductionOrder(ProductionOrder ProductionOrders)
         {
-
+            return null;
         }
 
-        void IRepositoryProductionOrder.DeleteProductionOrder()
+        void IRepositoryProductionOrder.DeleteProductionOrder(int idOrder)
         {
             
         }

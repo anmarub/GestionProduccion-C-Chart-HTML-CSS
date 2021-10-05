@@ -5,7 +5,7 @@ using Produccion.App.Persistence.AppRepository;
 
 namespace Produccion.App.Persistence.AppRepository
 {
-    public class RepositoryTypeDocument : IREpositoryTypeDocument
+    public class RepositoryTypeDocument : IRepositoryTypeDocument
     {
         //Defino atributo
         private readonly AppContext _appContext;
@@ -17,22 +17,22 @@ namespace Produccion.App.Persistence.AppRepository
         
         TypeDocument IRepositoryTypeDocument.AddTypeDocument(TypeDocument TypeDocument)
         {
-            
+           return null; 
         }
 
         IEnumerable<TypeDocument> IRepositoryTypeDocument.GetAllTypeDocuments()   
         {
-
+            return null;
         }
 
         TypeDocument IRepositoryTypeDocument.GetTypeDocument(int idTypeDocument)
         {
-
+            return null;
         }
 
         TypeDocument IRepositoryTypeDocument.UpdateTypeDocumet(TypeDocument TypeDocument)
         {
-
+            return null;
         }
 
         void IRepositoryTypeDocument.DeleteTypeDocument(int idTypeDocument)

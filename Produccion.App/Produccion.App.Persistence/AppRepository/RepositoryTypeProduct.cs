@@ -15,27 +15,27 @@ namespace Produccion.App.Persistence.AppRepository
             _appContext = appContext;
         }
 
-        TypeProduct IRepositoryTypeDocument.AddTypeProduct(TypeProduct typeProduct)
+        TypeProduct IRepositoryTypeProduct.AddTypeProduct(TypeProduct typeProduct)
         {
-
+            return null;
         }
 
         IEnumerable<TypeProduct> IRepositoryTypeProduct.GetAllTypeProduct()
         {
-
+            return null;
         }
 
-        TypeProduct IRepositoryTypeDocumento.GetTypeProduct(int idTypeDocument)
+        TypeProduct IRepositoryTypeProduct.GetTypeProduct(int idTypeProduct)
         {
-
+            return null;
         }
         
-        TypeProduct IRepositoryTypeDocument.UpdateTypeProduct(TypeProduct typeProduct)
+        TypeProduct IRepositoryTypeProduct.UpdateTypeProduct(TypeProduct typeProduct)
         {
-
+            return null;
         }
 
-        void IRepositoryTypeDocument.DeleteTypeProduct()
+        void IRepositoryTypeProduct.DeleteTypeProduct(int idTypeProduct)
         {
             
         }

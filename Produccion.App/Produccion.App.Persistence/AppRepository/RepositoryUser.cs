@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Runtime.CompilerServices;
+
 using Produccion.App.Domain.Entities;
 using Produccion.App.Persistence.AppRepository;
 
@@ -16,23 +19,23 @@ namespace Produccion.App.Persistence.AppRepository
             _appContext = appContext;
         }
 
-        User IRepositoryUser.AddUser(User Users)
+        User IRepositoryUser.AddUser(User users)
         {
-
+            return null;
         }
 
-        IEnumerable<User> IREpositoryUser.GetAllUser()
+        IEnumerable<User> IRepositoryUser.GetAllUser()
         {
-
+            return null;
         }
         User IRepositoryUser.GetUser(int idUser)
         {
-
+            return null;
         }
 
         User IRepositoryUser.UpdateUser(User Users)
         {
-
+            return null;
         }
         void IRepositoryUser.DeleteUser(int idUser)
         {

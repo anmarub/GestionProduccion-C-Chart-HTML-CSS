@@ -9,6 +9,5 @@ namespace Produccion.App.Domain.Entities
         public string date_delivery { get; set; }
         public string mod { get; set; }
         public int id_status_op { get; set; }
-        
     }
 }

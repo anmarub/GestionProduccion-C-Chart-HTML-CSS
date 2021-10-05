@@ -17,21 +17,21 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.AddStatusPurchanseOrder(StatusPurchanseOrder StatusOP)
         {
-
+            return null;
         }
         IEnumerable<StatusPurchanseOrder> IRepositoryStatusPurchanseOrder.GetAllStatusPurchseOrder()
         {
-
+            return null;
         }
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.GetStatusPurchseOrder(int idStatusOP)
         {
-
+            return null;
         }
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.UpdateStatusPurchseOrder(StatusPurchanseOrder StatusOP)
         {
-
+            return null;
         }
 
         void IRepositoryStatusPurchanseOrder.DeleteStatusPurchseOrder(int idStatusOP)

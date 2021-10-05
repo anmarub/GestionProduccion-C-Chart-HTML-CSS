@@ -17,21 +17,21 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusProductionOrder IRepositoryStatusProductionOrder.AddStatusProductionOrder(StatusProductionOrder OrderStatus)
         {
-
+            return null;
         }
         IEnumerable<StatusProductionOrder> IRepositoryStatusProductionOrder.GetAllStatusProduction()
         {
-
+            return null;
         }
 
         StatusProductionOrder IRepositoryStatusProductionOrder.GetStatusProduction(int IdStatusOP)
         {
-
+            return null;
         }
 
         StatusProductionOrder IRepositoryStatusProductionOrder.UpdateStatusProduction(StatusProductionOrder OrderStatus)
         {
-
+            return null;
         }
 
         void IRepositoryStatusProductionOrder.DeleteStatusProduction(int IdStatusOP)
