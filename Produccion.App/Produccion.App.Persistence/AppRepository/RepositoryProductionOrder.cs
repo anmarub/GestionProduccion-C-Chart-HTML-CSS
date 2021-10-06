@@ -23,7 +23,7 @@ namespace Produccion.App.Persistence.AppRepository
 
         IEnumerable<ProductionOrder> IRepositoryProductionOrder.GetAllProductionOrder()
         {
-            return null;
+            return _appContext.ProductionOrder;
         }
 
         ProductionOrder IRepositoryProductionOrder.GetProductionOrder(int idOrder)

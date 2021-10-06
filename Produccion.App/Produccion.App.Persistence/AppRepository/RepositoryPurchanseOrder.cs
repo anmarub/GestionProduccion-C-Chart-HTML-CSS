@@ -21,11 +21,11 @@ namespace Produccion.App.Persistence.AppRepository
         }
         IEnumerable<PurchanseOrder> IRepositoryPurchanseOrder.GetAllPurchanseOrder()
         {
-            return null;
+            return _appContext.PurchanseOrder;
         }
         PurchanseOrder IRepositoryPurchanseOrder.GetPurchanseOrder(int IdOrderOc)
         {
-            return null;
+            return _appContext.PurchanseOrder.FirstOrDefault(i => i.id == IdOrderOc);
         }
 
         PurchanseOrder IRepositoryPurchanseOrder.UpdatePurchanseOrder(PurchanseOrder OrdeOc)

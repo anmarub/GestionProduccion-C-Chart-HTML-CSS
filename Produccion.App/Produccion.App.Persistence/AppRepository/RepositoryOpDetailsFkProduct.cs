@@ -22,12 +22,12 @@ namespace Produccion.App.Persistence.AppRepository
 
         IEnumerable<OpDetailsFkProduct> IRepositoryOpDetailsFkProduct.GetAllDetailsOP()
         {
-            return null;
+            return _appContext.OpDetailsFkProduct;
         }
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.GetDetailsOP(int idOpDetails)
         {
-            return null;
+            return _appContext.OpDetailsFkProduct.FirstOrDefault(i => i.id == idOpDetails);
         }
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.UpdateDetailsOP(OpDetailsFkProduct OpDetails)

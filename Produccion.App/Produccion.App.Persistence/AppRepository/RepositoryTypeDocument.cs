@@ -22,12 +22,12 @@ namespace Produccion.App.Persistence.AppRepository
 
         IEnumerable<TypeDocument> IRepositoryTypeDocument.GetAllTypeDocuments()   
         {
-            return null;
+            return _appContext.TypeDocument;
         }
 
         TypeDocument IRepositoryTypeDocument.GetTypeDocument(int idTypeDocument)
         {
-            return null;
+            return _appContext.TypeDocument.FirstOrDefault(i => i.id == idTypeDocument);
         }
 
         TypeDocument IRepositoryTypeDocument.UpdateTypeDocumet(TypeDocument TypeDocument)

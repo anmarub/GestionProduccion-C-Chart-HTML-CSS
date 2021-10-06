@@ -21,12 +21,12 @@ namespace Produccion.App.Persistence.AppRepository
         }
         IEnumerable<StatusProductionOrder> IRepositoryStatusProductionOrder.GetAllStatusProduction()
         {
-            return null;
+            return _appContext.StatusProductionOrder;
         }
 
         StatusProductionOrder IRepositoryStatusProductionOrder.GetStatusProduction(int IdStatusOP)
         {
-            return null;
+            return _appContext.StatusProductionOrder.FirstOrDefault(i => i.id == IdStatusOP);
         }
 
         StatusProductionOrder IRepositoryStatusProductionOrder.UpdateStatusProduction(StatusProductionOrder OrderStatus)

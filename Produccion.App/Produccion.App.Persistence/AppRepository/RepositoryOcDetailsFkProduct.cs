@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 using System.Linq;
 using Produccion.App.Domain.Entities;
 using Produccion.App.Persistence.AppRepository;
@@ -16,27 +17,45 @@ namespace Produccion.App.Persistence.AppRepository
 
         OcDetailsFkProduct IRepositoryOcDetailsFkProduct.AddDetailOC(OcDetailsFkProduct DetailOC)
         {
-            return null;
+            var NewDetail = _appContext.OcDetailsFkProduct.Add(DetailOC);
+            _appContext.SaveChanges();
+            return NewDetail.Entity;
         }
 
         IEnumerable<OcDetailsFkProduct> IRepositoryOcDetailsFkProduct.GetAllDetailOC()
         {
-            return null;
+            return _appContext.OcDetailsFkProduct;
         }
 
         OcDetailsFkProduct IRepositoryOcDetailsFkProduct.GetDetailOC(int IdDetail)
         {
-            return null;
+            return _appContext.OcDetailsFkProduct.FirstOrDefault(i => i.id == IdDetail);
         }
 
         OcDetailsFkProduct IRepositoryOcDetailsFkProduct.UpdateDetailOC(OcDetailsFkProduct DetailOC)
         {
-            return null;
+            var SearchDetailOC = _appContext.OcDetailsFkProduct.FirstOrDefault(i => i.id == DetailOC.id);
+            if (SearchDetailOC == null)
+            {
+                SearchDetailOC.id = DetailOC.id;
+                SearchDetailOC.id_purchanse_order = DetailOC.id_purchanse_order;
+                SearchDetailOC.id_product = DetailOC.id_product;
+                SearchDetailOC.qty = DetailOC.qty;
+                _appContext.SaveChanges();
+            }
+            return SearchDetailOC;
         }
 
         void IRepositoryOcDetailsFkProduct.DeleteDetailOC(int IdDetail)
         {
-
+            var SearchDetailOC = _appContext.OcDetailsFkProduct.FirstOrDefault(i => i.id == IdDetail);
+            if(SearchDetailOC == null)
+            {
+                return;
+            }else{
+                _appContext.OcDetailsFkProduct.Remove(SearchDetailOC);
+                _appContext.SaveChanges();
+            }
         }
     }
 }

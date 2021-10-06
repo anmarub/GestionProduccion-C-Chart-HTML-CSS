@@ -26,11 +26,11 @@ namespace Produccion.App.Persistence.AppRepository
 
         IEnumerable<User> IRepositoryUser.GetAllUser()
         {
-            return null;
+            return _appContext.User;
         }
         User IRepositoryUser.GetUser(int idUser)
         {
-            return null;
+            return _appContext.User.FirstOrDefault(i => i.id == idUser);
         }
 
         User IRepositoryUser.UpdateUser(User Users)

@@ -22,12 +22,12 @@ namespace Produccion.App.Persistence.AppRepository
 
         IEnumerable<TypeProduct> IRepositoryTypeProduct.GetAllTypeProduct()
         {
-            return null;
+            return _appContext.TypeProduct;
         }
 
         TypeProduct IRepositoryTypeProduct.GetTypeProduct(int idTypeProduct)
         {
-            return null;
+            return _appContext.TypeProduct.FirstOrDefault(i => i.id == idTypeProduct);
         }
         
         TypeProduct IRepositoryTypeProduct.UpdateTypeProduct(TypeProduct typeProduct)

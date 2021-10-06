@@ -21,12 +21,12 @@ namespace Produccion.App.Persistence.AppRepository
         }
         IEnumerable<StatusPurchanseOrder> IRepositoryStatusPurchanseOrder.GetAllStatusPurchseOrder()
         {
-            return null;
+            return _appContext.StatusPurchanseOrder;
         }
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.GetStatusPurchseOrder(int idStatusOP)
         {
-            return null;
+            return _appContext.StatusPurchanseOrder.FirstOrDefault(i => i.id == idStatusOP);
         }
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.UpdateStatusPurchseOrder(StatusPurchanseOrder StatusOP)
