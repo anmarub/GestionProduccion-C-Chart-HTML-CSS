@@ -17,7 +17,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         Product IRepositoryProduct.AddProduct(Product product)
         {
-            return null;
+            var Newproduct = _appContext.Product.Add(product);
+            _appContext.SaveChanges();
+            return Newproduct.Entity;
         }
 
         IEnumerable<Product> IRepositoryProduct.GetAllProduct()
@@ -32,7 +34,21 @@ namespace Produccion.App.Persistence.AppRepository
 
         Product IRepositoryProduct.UpdateProduct(Product product)
         {
-            return null;
+            var Searchproduct = _appContext.Product.FirstOrDefault(i => i.id == product.id);
+            if(Searchproduct != null){
+                product.id = Searchproduct.id;
+                product.code_product = Searchproduct.code_product;
+                product.name_product = Searchproduct.name_product;
+                product.id_type_product = Searchproduct.id_type_product;
+                product.date_expiration = Searchproduct.date_expiration;
+                product.date_manufacturing = Searchproduct.date_manufacturing;
+                product.qty_available = Searchproduct.qty_available;
+                product.qty_production = Searchproduct.qty_production;
+                product.qty_order = Searchproduct.qty_order;
+                product.lote = Searchproduct.lote;
+
+            }
+            return Searchproduct;
         }
 
         void IRepositoryProduct.DeleteProduct(int IdProduct)

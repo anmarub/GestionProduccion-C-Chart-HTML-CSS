@@ -35,7 +35,7 @@ namespace Produccion.App.Persistence.AppRepository
         OcDetailsFkProduct IRepositoryOcDetailsFkProduct.UpdateDetailOC(OcDetailsFkProduct DetailOC)
         {
             var SearchDetailOC = _appContext.OcDetailsFkProduct.FirstOrDefault(i => i.id == DetailOC.id);
-            if (SearchDetailOC == null)
+            if (SearchDetailOC != null)
             {
                 SearchDetailOC.id = DetailOC.id;
                 SearchDetailOC.id_purchanse_order = DetailOC.id_purchanse_order;

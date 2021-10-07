@@ -17,7 +17,9 @@ namespace Produccion.App.Persistence.AppRepository
         
         TypeDocument IRepositoryTypeDocument.AddTypeDocument(TypeDocument TypeDocument)
         {
-           return null; 
+            var NewTypeDocument = _appContext.TypeDocument.Add(TypeDocument);
+            _appContext.SaveChanges();
+            return NewTypeDocument.Entity;
         }
 
         IEnumerable<TypeDocument> IRepositoryTypeDocument.GetAllTypeDocuments()   
@@ -32,7 +34,14 @@ namespace Produccion.App.Persistence.AppRepository
 
         TypeDocument IRepositoryTypeDocument.UpdateTypeDocumet(TypeDocument TypeDocument)
         {
-            return null;
+            var SearchTypeDocument = _appContext.TypeDocument.FirstOrDefault(i => i.id == TypeDocument.id);
+            if(SearchTypeDocument != null)
+            {
+                TypeDocument.id = SearchTypeDocument.id;
+                TypeDocument.code = SearchTypeDocument.code;
+                TypeDocument.name = SearchTypeDocument.name;
+            }
+            return SearchTypeDocument;
         }
 
         void IRepositoryTypeDocument.DeleteTypeDocument(int idTypeDocument)

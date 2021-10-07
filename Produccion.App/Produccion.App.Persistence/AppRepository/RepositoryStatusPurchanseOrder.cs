@@ -17,7 +17,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.AddStatusPurchanseOrder(StatusPurchanseOrder StatusOP)
         {
-            return null;
+            var NewStatusOP = _appContext.StatusPurchanseOrder.Add(StatusOP);
+            _appContext.SaveChanges();
+            return NewStatusOP.Entity;
         }
         IEnumerable<StatusPurchanseOrder> IRepositoryStatusPurchanseOrder.GetAllStatusPurchseOrder()
         {
@@ -31,7 +33,14 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusPurchanseOrder IRepositoryStatusPurchanseOrder.UpdateStatusPurchseOrder(StatusPurchanseOrder StatusOP)
         {
-            return null;
+            var SearchStatusOP = _appContext.StatusPurchanseOrder.FirstOrDefault(i => i.id == StatusOP.id);
+            if(SearchStatusOP != null)
+            {
+                StatusOP.id = SearchStatusOP.id;
+                StatusOP.codeStatus = SearchStatusOP.codeStatus;
+                StatusOP.nameStatus = SearchStatusOP.nameStatus;
+            }
+            return SearchStatusOP;
         }
 
         void IRepositoryStatusPurchanseOrder.DeleteStatusPurchseOrder(int idStatusOP)

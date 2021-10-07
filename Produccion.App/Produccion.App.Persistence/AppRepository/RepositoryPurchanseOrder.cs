@@ -17,7 +17,10 @@ namespace Produccion.App.Persistence.AppRepository
 
         PurchanseOrder IRepositoryPurchanseOrder.AddPurchanseOrder(PurchanseOrder OrdeOc)
         {
-            return null;
+            var NewOrdeOc = _appContext.PurchanseOrder.Add(OrdeOc);
+            _appContext.SaveChanges();
+            return NewOrdeOc.Entity;
+
         }
         IEnumerable<PurchanseOrder> IRepositoryPurchanseOrder.GetAllPurchanseOrder()
         {
@@ -30,7 +33,16 @@ namespace Produccion.App.Persistence.AppRepository
 
         PurchanseOrder IRepositoryPurchanseOrder.UpdatePurchanseOrder(PurchanseOrder OrdeOc)
         {
-            return null;
+            var SearchOrdeOc = _appContext.PurchanseOrder.FirstOrDefault(i => i.id == OrdeOc.id);
+            if(SearchOrdeOc != null)
+            {
+                OrdeOc.id = SearchOrdeOc.id;
+                OrdeOc.num_oc = SearchOrdeOc.num_oc;
+                OrdeOc.id_customer = SearchOrdeOc.id_customer;
+                OrdeOc.id_status_oc = SearchOrdeOc.id_status_oc;
+                OrdeOc.date_delivery = SearchOrdeOc.date_delivery;
+            }
+            return SearchOrdeOc;
         }
 
         void IRepositoryPurchanseOrder.DeletePurchanseOrder(int IdOrderOc)

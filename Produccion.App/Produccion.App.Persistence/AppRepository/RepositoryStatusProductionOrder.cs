@@ -17,7 +17,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusProductionOrder IRepositoryStatusProductionOrder.AddStatusProductionOrder(StatusProductionOrder OrderStatus)
         {
-            return null;
+            var NewOrderStatus = _appContext.StatusProductionOrder.Add(OrderStatus);
+            _appContext.SaveChanges();
+            return NewOrderStatus.Entity;
         }
         IEnumerable<StatusProductionOrder> IRepositoryStatusProductionOrder.GetAllStatusProduction()
         {
@@ -31,7 +33,15 @@ namespace Produccion.App.Persistence.AppRepository
 
         StatusProductionOrder IRepositoryStatusProductionOrder.UpdateStatusProduction(StatusProductionOrder OrderStatus)
         {
-            return null;
+            var SearchOrderStatus = _appContext.StatusProductionOrder.FirstOrDefault(i => i.id == OrderStatus.id);
+            if(SearchOrderStatus != null)
+            {
+                OrderStatus.id = SearchOrderStatus.id;
+                OrderStatus.code_status_op = SearchOrderStatus.code_status_op;
+                OrderStatus.name = SearchOrderStatus.name;
+
+            }
+            return SearchOrderStatus;
         }
 
         void IRepositoryStatusProductionOrder.DeleteStatusProduction(int IdStatusOP)

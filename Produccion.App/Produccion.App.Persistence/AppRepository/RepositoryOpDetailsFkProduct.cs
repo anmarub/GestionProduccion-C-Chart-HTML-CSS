@@ -17,7 +17,10 @@ namespace Produccion.App.Persistence.AppRepository
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.AddDetailsOP(OpDetailsFkProduct OpDetails)
         {
-            return null;
+            var NewOpDetails = _appContext.OpDetailsFkProduct.Add(OpDetails);
+            _appContext.SaveChanges();
+            return NewOpDetails.Entity;
+
         }
 
         IEnumerable<OpDetailsFkProduct> IRepositoryOpDetailsFkProduct.GetAllDetailsOP()
@@ -32,7 +35,16 @@ namespace Produccion.App.Persistence.AppRepository
 
         OpDetailsFkProduct IRepositoryOpDetailsFkProduct.UpdateDetailsOP(OpDetailsFkProduct OpDetails)
         {
-            return null;
+            var SearchOpDetails = _appContext.OpDetailsFkProduct.FirstOrDefault(i => i.id == OpDetails.id);
+            if (SearchOpDetails != null)
+            {
+                OpDetails.id = SearchOpDetails.id;
+                OpDetails.id_production_order = SearchOpDetails.id_production_order;
+                OpDetails.id_product = SearchOpDetails.id_product;
+                OpDetails.qty_production = SearchOpDetails.qty_production;
+                _appContext.SaveChanges();
+            }
+            return SearchOpDetails;
         }
 
         void IRepositoryOpDetailsFkProduct.DeleteDetailsOP(int idOpDetails)

@@ -18,7 +18,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         ProductionOrder IRepositoryProductionOrder.AddProductionOrder(ProductionOrder ProductionOrders)
         {
-            return null;
+            var NewProductionOrders = _appContext.ProductionOrder.Add(ProductionOrders);
+            _appContext.SaveChanges();
+            return NewProductionOrders.Entity;
         }
 
         IEnumerable<ProductionOrder> IRepositoryProductionOrder.GetAllProductionOrder()
@@ -33,7 +35,16 @@ namespace Produccion.App.Persistence.AppRepository
 
         ProductionOrder IRepositoryProductionOrder.UpdateProductionOrder(ProductionOrder ProductionOrders)
         {
-            return null;
+            var SearchProductionOrders = _appContext.ProductionOrder.FirstOrDefault(i => i.id == ProductionOrders.id);
+            if(SearchProductionOrders != null)
+            {
+                ProductionOrders.id = SearchProductionOrders.id;
+                ProductionOrders.code_order = SearchProductionOrders.code_order;
+                ProductionOrders.date_delivery = SearchProductionOrders.date_delivery;
+                ProductionOrders.mod = SearchProductionOrders.mod;
+                ProductionOrders.id_status_op = SearchProductionOrders.id_status_op;
+            }
+            return SearchProductionOrders;
         }
 
         void IRepositoryProductionOrder.DeleteProductionOrder(int idOrder)

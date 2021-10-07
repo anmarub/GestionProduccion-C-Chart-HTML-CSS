@@ -17,7 +17,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         TypeProduct IRepositoryTypeProduct.AddTypeProduct(TypeProduct typeProduct)
         {
-            return null;
+            var NewtypeProduct = _appContext.TypeProduct.Add(typeProduct);
+            _appContext.SaveChanges();
+            return NewtypeProduct.Entity;
         }
 
         IEnumerable<TypeProduct> IRepositoryTypeProduct.GetAllTypeProduct()
@@ -32,7 +34,14 @@ namespace Produccion.App.Persistence.AppRepository
         
         TypeProduct IRepositoryTypeProduct.UpdateTypeProduct(TypeProduct typeProduct)
         {
-            return null;
+            var SearchtypeProduct = _appContext.TypeProduct.FirstOrDefault(i => i.id == typeProduct.id);
+            if(SearchtypeProduct != null)
+            {
+                typeProduct.id = SearchtypeProduct.id;
+                typeProduct.code_product = SearchtypeProduct.code_product;
+                typeProduct.name = SearchtypeProduct.name;
+            }
+            return SearchtypeProduct;
         }
 
         void IRepositoryTypeProduct.DeleteTypeProduct(int idTypeProduct)

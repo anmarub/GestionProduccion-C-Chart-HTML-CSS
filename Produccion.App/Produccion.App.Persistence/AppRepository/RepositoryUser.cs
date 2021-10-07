@@ -21,7 +21,9 @@ namespace Produccion.App.Persistence.AppRepository
 
         User IRepositoryUser.AddUser(User users)
         {
-            return null;
+            var NewUsers = _appContext.User.Add(users);
+            _appContext.SaveChanges();
+            return NewUsers.Entity;
         }
 
         IEnumerable<User> IRepositoryUser.GetAllUser()
@@ -35,7 +37,17 @@ namespace Produccion.App.Persistence.AppRepository
 
         User IRepositoryUser.UpdateUser(User Users)
         {
-            return null;
+            var SearchUsers = _appContext.User.FirstOrDefault(i => i.id == Users.id);
+            if(SearchUsers != null)
+            {
+                Users.id = SearchUsers.id;
+                Users.username = SearchUsers.username;
+                Users.email = SearchUsers.email;
+                Users.password = SearchUsers.password;
+                Users.name = SearchUsers.name;
+                Users.fullname = SearchUsers.fullname;
+            }
+            return SearchUsers;
         }
         void IRepositoryUser.DeleteUser(int idUser)
         {
