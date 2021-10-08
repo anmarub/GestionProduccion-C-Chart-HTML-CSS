@@ -11,6 +11,12 @@ dotnet new classlib -o Produccion.App.Persistence
 
 dotnet new webapi -o Produccion.App.Service
 
+Capa consola
+
+dotnet add reference ..\Produccion.App.Domain\
+dotnet add reference ..\Produccion.App.Persistence\
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.0
+
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
