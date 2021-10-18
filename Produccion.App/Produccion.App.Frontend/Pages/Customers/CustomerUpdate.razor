@@ -1,0 +1,23 @@
+﻿@page "/update_customer/{id}"
+@inject Services.ICustomerService Service
+@inject NavigationManager navManager
+<h3>Actualizar Cliente</h3>
+
+<Form ButtonText="Actualizar Cliente" customer="@customer"
+            OnValidSubmit="@UpdateCustomer" />
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    Customer customer = new Customer();
+    
+    protected async override Task OnParametersSetAsync()
+    {
+       customer = await Service.GetCustomer(int.Parse(Id));
+    }
+    async Task UpdateCustomer()
+    {
+        await Service.UpdateCustomer(customer);
+        navManager.NavigateTo("/customers");
+    }
+}

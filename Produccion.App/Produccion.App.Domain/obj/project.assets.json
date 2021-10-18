@@ -8,24 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\andres.rubiano\\.nuget\\packages\\": {}
+    "C:\\Users\\gdnie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
       "projectName": "Produccion.App.Domain",
-      "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
-      "packagesPath": "C:\\Users\\andres.rubiano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\obj\\",
+      "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+      "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andres.rubiano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -5796,35 +5796,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andres.rubiano\\.nuget\\packages\\": {}
+    "C:\\Users\\gdnie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Console\\Produccion.App.Console.csproj",
+      "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Console\\Produccion.App.Console.csproj",
       "projectName": "Produccion.App.Console",
-      "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Console\\Produccion.App.Console.csproj",
-      "packagesPath": "C:\\Users\\andres.rubiano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Console\\obj\\",
+      "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Console\\Produccion.App.Console.csproj",
+      "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andres.rubiano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
-              "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
+            "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
+              "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
             },
-            "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
-              "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj"
+            "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
+              "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj"
             }
           }
         }

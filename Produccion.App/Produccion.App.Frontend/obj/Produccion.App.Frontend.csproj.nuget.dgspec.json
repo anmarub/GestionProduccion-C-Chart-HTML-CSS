@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj": {}
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj": {
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj",
-        "projectName": "Produccion.App.Frontend",
-        "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj",
-        "packagesPath": "C:\\Users\\andres.rubiano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Frontend\\obj\\",
+        "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+        "projectName": "Produccion.App.Domain",
+        "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+        "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres.rubiano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,19 +39,95 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj",
+        "projectName": "Produccion.App.Frontend",
+        "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Frontend\\Produccion.App.Frontend.csproj",
+        "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Frontend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
+                "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
+              },
+              "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
+                "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly": {
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[3.2.0-preview3.20168.3, )"
             },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[5.0.11, )"
             },
-            "System.Net.Http.Json": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -62,23 +140,95 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.10, 5.0.10]"
-            }
-          ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
+        "projectName": "Produccion.App.Persistence",
+        "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
+        "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
+                "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
       },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

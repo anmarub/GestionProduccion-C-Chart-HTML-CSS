@@ -1,0 +1,17 @@
+﻿@page "/create_product"
+@inject Services.IProductService Service
+@inject NavigationManager navManger
+
+<h3>Crear Producto</h3>
+
+<Form ButtonText="Crear Producto" product="@product"
+            OnValidSubmit="@CreateProduct" />
+
+@code {
+    Product product = new Product();
+    async Task CreateProduct()
+    {
+        await Service.AddProduct(product);
+        navManger.NavigateTo("/products");
+    }
+}

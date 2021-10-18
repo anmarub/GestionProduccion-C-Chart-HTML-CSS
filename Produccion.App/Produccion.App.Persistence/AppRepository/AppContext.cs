@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using Produccion.App.Domain.Entities;
+using Produccion.App.Domain;
 
 namespace Produccion.App.Persistence.AppRepository
 {
     public class AppContext : DbContext
     {
-        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<OcDetailsFkProduct> OcDetailsFkProduct { get; set; }
         public DbSet<OpDetailsFkProduct> OpDetailsFkProduct { get; set; }
         public DbSet<Product> Product { get; set; }
@@ -21,8 +21,7 @@ namespace Produccion.App.Persistence.AppRepository
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =produccion");
-               //optionsBuilder.UseMySql("server=localhost;database=library;user=mysqlschema;password=mypassword");
+                optionsBuilder.UseSqlServer("Server=localhost; user id=sa; password=12345678; Initial Catalog=produccion;"); 
             }
         }
     }

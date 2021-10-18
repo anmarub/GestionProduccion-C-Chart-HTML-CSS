@@ -1,6 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Produccion.App.Domain.Entities
+namespace Produccion.App.Domain
 {
     public class Customer
     {

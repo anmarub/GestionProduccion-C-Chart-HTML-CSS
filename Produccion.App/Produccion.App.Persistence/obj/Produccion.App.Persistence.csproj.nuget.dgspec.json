@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {}
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
         "projectName": "Produccion.App.Domain",
-        "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
-        "packagesPath": "C:\\Users\\andres.rubiano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\obj\\",
+        "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj",
+        "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres.rubiano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,30 +58,32 @@
         }
       }
     },
-    "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
+    "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
         "projectName": "Produccion.App.Persistence",
-        "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
-        "packagesPath": "C:\\Users\\andres.rubiano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\Produccion.App.Persistence.csproj",
+        "packagesPath": "C:\\Users\\gdnie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres.rubiano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gdnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
-                "projectPath": "C:\\Users\\andres.rubiano\\OneDrive\\Project\\ProyectoProduccion\\GestionProduccion-C-Chart-HTML-CSS\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
+              "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj": {
+                "projectPath": "C:\\Users\\gdnie\\OneDrive\\Desktop\\Produccion.App\\Produccion.App.Domain\\Produccion.App.Domain.csproj"
               }
             }
           }
@@ -94,14 +98,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[5.0.10, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -121,10 +117,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[5.0.2, )"
             }
           },
           "imports": [

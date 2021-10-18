@@ -10,3 +10,15 @@ C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.dll
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\ref\Produccion.App.Domain.dll
 C:\Users\andres.rubiano\OneDrive\Project\ProyectoProduccion\GestionProduccion-C-Chart-HTML-CSS\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.pdb
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\bin\Debug\net5.0\Produccion.App.Domain.deps.json
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\bin\Debug\net5.0\Produccion.App.Domain.dll
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\bin\Debug\net5.0\ref\Produccion.App.Domain.dll
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\bin\Debug\net5.0\Produccion.App.Domain.pdb
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.csproj.AssemblyReference.cache
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.AssemblyInfoInputs.cache
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.AssemblyInfo.cs
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.dll
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\ref\Produccion.App.Domain.dll
+C:\Users\gdnie\OneDrive\Desktop\Produccion.App\Produccion.App.Domain\obj\Debug\net5.0\Produccion.App.Domain.pdb

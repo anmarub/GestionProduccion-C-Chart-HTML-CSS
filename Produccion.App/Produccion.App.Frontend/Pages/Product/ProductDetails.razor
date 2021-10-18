@@ -1,0 +1,47 @@
+﻿@page "/product_details/{id}"
+@inject Services.IProductService Service
+@inject NavigationManager navManger
+
+<div class="row justify content center m.3"> 
+   <div class="col-sm-8">
+       <div class="card">
+           @if(product!=null){
+           <div class="card-header">
+                <h1>@product.name_product</h1>
+            </div>
+            <div class="card-body text-center">
+                <h4>Codigo ID : @product.code_product</h4>
+                <h4>Tipo : @product.id_type_product</h4>
+                <h4>Fecha Vencimiento : @product.date_expiration</h4>
+                <h4>Fecha Fabricacion : @product.date_manufacturing</h4>
+                <h4>Cant Disponible : @product.qty_available</h4>
+                <h4>Cant En Produccion : @product.qty_production</h4>
+                <h4>Cantidad Ordenada : @product.qty_order</h4>
+                <h4>lote : @product.lote</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a class="btn btn-primary" href="/products">Regresar</a>
+                <a class="btn btn-primary" href="update_product/@product.id">Editar</a>
+                <button class="btn btn-danger" @onclick="DeleteProduct">Eliminar</button>
+            </div>
+           }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string id { get; set; }
+    public Product product { get; set; } = new Product();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await Service.GetProduct(int.Parse(id));
+    }
+
+    protected async void DeleteProduct()
+    {
+        await Service.DeleteProduct(int.Parse(id));
+        navManger.NavigateTo("/products");
+    }
+}

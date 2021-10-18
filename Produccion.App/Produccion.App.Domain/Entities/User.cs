@@ -1,6 +1,6 @@
 using System;
 
-namespace Produccion.App.Domain.Entities
+namespace Produccion.App.Domain
 {
     public class User
     {

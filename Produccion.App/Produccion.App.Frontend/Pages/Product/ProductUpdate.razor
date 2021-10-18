@@ -1,0 +1,23 @@
+﻿@page "/update_product/{id}"
+@inject Services.IProductService Service
+@inject NavigationManager navManager
+<h3>Actualizar Producto</h3>
+
+<Form ButtonText="Actualizar Producto" product="@product"
+            OnValidSubmit="@UpdateProduct" />
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    Product product = new Product();
+    
+    protected async override Task OnParametersSetAsync()
+    {
+       product = await Service.GetProduct(int.Parse(Id));
+    }
+    async Task UpdateProduct()
+    {
+        await Service.UpdateProduct(product);
+        navManager.NavigateTo("/products");
+    }
+}

@@ -1,23 +1,6 @@
 @import '';
 
-/* /Pages/Customers.razor.rz.scp.css */
-.iconLines[b-8bhqdjqbnl]{
-    color:white;
-}
-/* /Pages/Index.razor.rz.scp.css */
-/* /Pages/OrderProduction.razor.rz.scp.css */
-.iconLines[b-a1d5bd59z6]{
-    color:white;
-}
-/* /Pages/OrderPurchase.razor.rz.scp.css */
-.iconLines[b-7nxlos97bu]{
-    color:white;
-}
-/* /Pages/Products.razor.rz.scp.css */
-.iconLines[b-ixt6u6x6gv]{
-    color:white;
-}
-/* /Shared/MainLayout.razor.rz.scp.css */
+/* _content/Produccion.App.Frontend/Shared/MainLayout.razor.rz.scp.css */
 .page[b-onujmw2396] {
     position: relative;
     display: flex;
@@ -88,7 +71,7 @@
         padding-right: 1.5rem !important;
     }
 }
-/* /Shared/NavMenu.razor.rz.scp.css */
+/* _content/Produccion.App.Frontend/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-9imbsquvna] {
     background-color: rgba(255, 255, 255, 0.1);
 }

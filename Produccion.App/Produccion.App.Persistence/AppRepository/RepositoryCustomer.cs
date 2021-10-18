@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using Produccion.App.Domain.Entities;
-using Produccion.App.Persistence.AppRepository;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+using Produccion.App.Domain;
 
 namespace Produccion.App.Persistence.AppRepository
 {
@@ -11,7 +13,9 @@ namespace Produccion.App.Persistence.AppRepository
         // Instanciamos el objecto de la clase AppContext
         private readonly AppContext _appContext;
 
-        public RepositoryCustomer(AppContext appContext)
+        public IEnumerable<Customer> customers {get; set;}
+
+        public RepositoryCustomer(AppContext appContext)    
         {
             _appContext = appContext;
         }
@@ -20,39 +24,35 @@ namespace Produccion.App.Persistence.AppRepository
         {
             try{
             
-            var AddingCustomer = _appContext.Customer.Add(customer);
-            _appContext.SaveChanges();
-            return AddingCustomer.Entity;
+                var AddingCustomer = _appContext.Customers.Add(customer);
+                _appContext.SaveChanges();
+                return AddingCustomer.Entity;
 
-            }catch(ArgumentNullException e){
+            }catch{
             
-                Console.WriteLine("Exception Message: " + e.Message);
-                return null;
+                throw;
             }
         }
 
-        IEnumerable<Customer> IRepositoryCustomer.GetAllCustomer()
+        IEnumerable<Customer> IRepositoryCustomer.GetAllCustomers(string? nombre)
         {
-            try{
+            if(nombre != null)
+            {
+                customers = _appContext.Customers.Where(p => p.name.Contains(nombre));
+            }else
+                customers = _appContext.Customers;
 
-                return _appContext.Customer;
-
-            }catch(ArgumentNullException e){
-
-                Console.WriteLine("Exception Message: " + e.Message);
-                return null;
-            }
-            
+            return customers;            
         }
 
-        Customer IRepositoryCustomer.GetCustomer(int IdCustomer)
+        Customer IRepositoryCustomer.GetCustomer(int? IdCustomer)
         {
-            return _appContext.Customer.FirstOrDefault(c => c.id == IdCustomer); 
+            return _appContext.Customers.FirstOrDefault(c => c.id == IdCustomer); 
         }
 
         Customer IRepositoryCustomer.UpdateCustomer(Customer customer)
         {
-            var SearchCustomer = _appContext.Customer.FirstOrDefault(c => c.id == customer.id);
+            var SearchCustomer = _appContext.Customers.FirstOrDefault(c => c.id == customer.id);
             if (SearchCustomer != null)
             {
                 SearchCustomer.identification = customer.identification;
@@ -67,12 +67,12 @@ namespace Produccion.App.Persistence.AppRepository
 
         void IRepositoryCustomer.DeleteCustomer(int idCustomer)
         {
-            var SearchCustomer = _appContext.Customer.FirstOrDefault(c => c.id == idCustomer);
+            var SearchCustomer = _appContext.Customers.FirstOrDefault(c => c.id == idCustomer);
             if (SearchCustomer == null)
             {
                 return;
             }else{
-                _appContext.Customer.Remove(SearchCustomer);
+                _appContext.Customers.Remove(SearchCustomer);
                 _appContext.SaveChanges();
             }
         }

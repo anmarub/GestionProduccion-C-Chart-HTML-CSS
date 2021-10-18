@@ -1,0 +1,65 @@
+﻿@page "/customers"
+@inject Services.ICustomerService Service
+
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+        <h5 class="card-title">Clientes </h5>
+        <form>
+            <div class="form-row">
+                <div>
+                    <a class="btn btn-success" href='/create_customer'>Nuevo </a>
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" id="useIndividualParams" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (customers == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Tipo Documento</th>
+                        <th>Identificacion</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Direccion</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var customer in customers)
+                    {
+                        <tr>
+                            <td>@customer.id_type_identification</td>
+                            <td>@customer.identification</td>
+                            <td>@customer.name</td>
+                            <td>@customer.email</td>
+                            <td>@customer.address</td>
+                            <td><a href=@($"customer_details/{customer.id}") class="btn btn-primary btn-sm"><span type="button" aria-label="Left Align" class="oi oi-magnifying-glass" aria-hidden="true"></span></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</div>
+}
+
+@code {
+    private IEnumerable<Domain.Customer> customers;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Service.GetAllCustomers();
+    }
+}

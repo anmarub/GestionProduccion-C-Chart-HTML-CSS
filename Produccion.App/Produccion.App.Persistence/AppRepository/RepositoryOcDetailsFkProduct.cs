@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using System;
 using System.Linq;
-using Produccion.App.Domain.Entities;
-using Produccion.App.Persistence.AppRepository;
+using System;
+using Microsoft.EntityFrameworkCore;
+using Produccion.App.Domain;
 
 namespace Produccion.App.Persistence.AppRepository
 {

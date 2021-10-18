@@ -1,0 +1,43 @@
+﻿@page "/customer_details/{id}"
+@inject Services.ICustomerService Service
+@inject NavigationManager navManger
+
+<div class="row justify content center m.3"> 
+   <div class="col-sm-8">
+       <div class="card">
+           @if(customer!=null){
+           <div class="card-header">
+                <h1>@customer.name</h1>
+            </div>
+            <div class="card-body text-center">
+                <h4>Nit ID : @customer.identification</h4>
+                <h4>Email : @customer.email</h4>
+                <h4>Direccion : @customer.address</h4>
+                <h4>Direccion : @customer.id_type_identification</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a class="btn btn-primary" href="/customers">Regresar</a>
+                <a class="btn btn-primary" href="update_customer/@customer.id">Editar</a>
+                <button class="btn btn-danger" @onclick="DeleteCustomer">Eliminar</button>
+            </div>
+           }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string id { get; set; }
+    public Customer customer { get; set; } = new Customer();
+
+    protected override async Task OnInitializedAsync()
+    {
+        customer = await Service.GetCustomer(int.Parse(id));
+    }
+
+    protected async void DeleteCustomer()
+    {
+        await Service.DeleteCustomer(int.Parse(id));
+        navManger.NavigateTo("/customers");
+    }
+}

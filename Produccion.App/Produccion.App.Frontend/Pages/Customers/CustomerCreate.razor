@@ -1,0 +1,17 @@
+﻿@page "/create_customer"
+@inject Services.ICustomerService Service
+@inject NavigationManager navManger
+
+<h3>Crear Cliente</h3>
+
+<Form ButtonText="Crear Cliente" customer="@customer"
+            OnValidSubmit="@CreateCustomer" />
+
+@code {
+    Customer customer = new Customer();
+    async Task CreateCustomer()
+    {
+        await Service.AddCustomer(customer);
+        navManger.NavigateTo("/customers");
+    }
+}

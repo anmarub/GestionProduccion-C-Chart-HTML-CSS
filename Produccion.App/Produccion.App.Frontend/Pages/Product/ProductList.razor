@@ -1,0 +1,73 @@
+﻿@page "/products"
+@inject Services.IProductService Service
+
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+        <h5 class="card-title">Productos </h5>
+        <form>
+            <div class="form-row">
+                <div>
+                    <a class="btn btn-success" href='/create_product'>Nuevo </a>
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control" id="useIndividualParams" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<div class="card bg-light mb-3" style="width:auto">
+    <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>F Ven</th>
+                        <th>F Fab</th>
+                        <th>Cant Disp</th>
+                        <th>Cant Prod</th>
+                        <th>Cant Ord</th>
+                        <th>lote</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in products)
+                    {
+                        <tr>
+                            <td>@product.code_product</td>
+                            <td>@product.name_product</td>
+                            <td>@product.id_type_product</td>
+                            <td>@product.date_expiration</td>
+                            <td>@product.date_manufacturing</td>
+                            <td>@product.qty_available</td>
+                            <td>@product.qty_production</td>
+                            <td>@product.qty_order</td>
+                            <td>@product.lote</td>
+                            <td><a href=@($"product_details/{product.id}") class="btn btn-primary btn-sm"><span type="button" aria-label="Left Align" class="oi oi-magnifying-glass" aria-hidden="true"></span></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</div>
+}
+
+@code {
+    private IEnumerable<Domain.Product> products;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Service.GetAllProducts();
+    }
+}
